@@ -1,0 +1,17 @@
+@use "sass:math";
+@use "../global" as *;
+@use "../foundation/fonts" as *;
+
+.l-inner {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @include mq("md") {
+    width: 1070px;
+    max-width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}

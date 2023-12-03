@@ -1,0 +1,13 @@
+@use "sass:math";
+@use "../global" as *;
+@use "../foundation/fonts" as *;
+
+.p-works {
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  @media (min-width: 900px) {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+}

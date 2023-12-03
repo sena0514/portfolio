@@ -1,0 +1,23 @@
+@use "sass:math";
+@use "../global" as *;
+@use "../foundation/fonts" as *;
+
+.p-util-head {
+  margin-top: 70px;
+  background-image: url(../img/sp/head-bg.jpg);
+  width: 100%;
+  padding: 70px 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @include mq(md) {
+    background-image: url(../img/head-bg.jpg);
+    margin-top: 0;
+    padding: 100px 0;
+  }
+}
+
+.p-util-head__title {
+  text-align: center;
+}

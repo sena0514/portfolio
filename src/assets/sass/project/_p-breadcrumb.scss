@@ -1,0 +1,32 @@
+@use "sass:math";
+@use "../global" as *;
+@use "../foundation/fonts" as *;
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  font-size: 13px;
+  margin-top: 20px;
+  width: 1070px;
+  max-width: 100%;
+
+  span {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+  @include mq("md") {
+    padding-left: 41px;
+  }
+
+  a {
+    transition: opacity 0.3s;
+  }
+
+  .home {
+    color: $text-color;
+  }
+}

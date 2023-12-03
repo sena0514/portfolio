@@ -1,0 +1,8 @@
+@use "sass:math";
+@use "../global" as *;
+@use "../foundation/fonts" as *;
+
+.p-top-section {
+  padding-top: fluid-text(40px, 70px);
+  padding-bottom: fluid-text(50px, 120px);
+}

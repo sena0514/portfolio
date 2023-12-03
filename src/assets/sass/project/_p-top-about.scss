@@ -1,0 +1,140 @@
+@use "sass:math";
+@use "../global" as *;
+@use "../foundation/fonts" as *;
+
+//900px切り替え
+
+.p-top-about {
+}
+
+.p-top-about__inner {
+  position: relative;
+}
+
+.p-top-about__title {
+  text-align: center;
+
+  @media (min-width: 900px) {
+    text-align: left;
+  }
+}
+
+.p-top-about__wrap {
+  display: flex;
+  flex-direction: column;
+  @media (min-width: 900px) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+
+.p-top-about__img {
+  width: 30vw;
+  margin: 0 auto;
+  margin-top: 25px;
+  @media (min-width: 900px) {
+    margin: 0 0;
+    width: 230px;
+  }
+}
+
+.p-about__profile {
+  @media (min-width: 900px) {
+    margin-right: vw(30);
+    width: calc(100% - 230px);
+  }
+}
+
+.p-top-about__name {
+  font-size: fluid-text(22px, 32px);
+  font-family: $ff-en;
+  margin-top: 25px;
+  text-align: center;
+
+  @media (min-width: 900px) {
+    text-align: left;
+    margin-top: 40px;
+  }
+}
+
+.p-top-about__text1 {
+  line-height: normal;
+  margin-top: 25px;
+  font-size: 14px;
+
+  @media (min-width: 900px) {
+    font-size: 16px;
+  }
+}
+
+.p-top-about__text2 {
+  line-height: normal;
+  margin-top: 20px;
+  font-size: 14px;
+  span {
+    background: linear-gradient(to bottom, transparent 40%, $accent-color-blue);
+  }
+
+  @media (min-width: 900px) {
+    font-size: 16px;
+  }
+}
+
+.p-top-about__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  margin-top: 40px;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    justify-content: center;
+    font-size: 16px;
+  }
+}
+
+.p-top-about__item {
+  width: fluid-text(345px, 400px);
+  max-width: 100%;
+  height: fluid-text(200px, 210px);
+  border: 3px solid #333;
+  border-radius: 3px;
+  padding: 15px;
+  line-height: normal;
+
+  &:nth-child(n + 2) {
+    margin-top: 15px;
+  }
+
+  @media (min-width: 900px) {
+    &:nth-child(n + 2) {
+      margin-top: 0;
+      margin-left: 20px;
+    }
+  }
+}
+
+.p-top-about__item-content {
+  &:nth-child(n + 2) {
+    margin-top: 8px;
+  }
+}
+
+.p-top-about__item-head {
+  font-weight: bold;
+}
+
+.p-top-about__item-body {
+  margin-top: 5px;
+}
+
+.p-top-about__item-text1 {
+  span {
+    margin-left: 15px;
+  }
+}
+
+.p-top-about__item-text2 {
+  margin-top: 10px;
+}

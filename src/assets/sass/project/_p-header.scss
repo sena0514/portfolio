@@ -1,0 +1,78 @@
+@use "sass:math";
+@use "../global" as *;
+@use "../foundation/fonts" as *;
+
+//768px切り替え
+
+.p-header {
+  display: none;
+
+  @media (min-width: 768px) {
+    text-align: center;
+    background: #333;
+  }
+}
+
+.p-header_inner {
+}
+
+.p-header__logo {
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.p-header__logo-link {
+  font-size: 14px;
+  font-family: $ff-en;
+  color: #fff;
+}
+
+.p-header__nav {
+  margin-top: 50px;
+}
+
+.p-header__list {
+}
+
+.p-header__item {
+  &:nth-child(n + 2) {
+    margin-top: 25px;
+  }
+}
+
+.p-header__item-link {
+  display: inline-block;
+  font-family: $ff-en;
+  font-size: fluid-text(20px, 25px);
+  padding: 10px 15px;
+  transition: opacity 0.3s;
+  color: #fff;
+
+  &._contact {
+    border: 1px solid #fff;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.p-header__sns {
+  margin-top: 50px;
+}
+
+.p-header__sns-item {
+  &:nth-child(n + 2) {
+    margin-top: 15px;
+  }
+}
+
+.p-header__sns-link {
+  display: inline-block;
+  padding: 12px;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

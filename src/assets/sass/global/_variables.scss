@@ -1,0 +1,24 @@
+//色
+$text-color: #333; //テキストカラー
+$main-color:#DEE6EE; //メインカラー
+$accent-color-blue: #67A5DA; //アクセントカラー（ブルー）
+$accent-color-pink: #E94E66; //アクセントカラー（ピンク）
+$background-color: #fff; //背景（白）
+
+
+//フォント
+$ff-base: 'Noto Sans JP', sans-serif; //日本語標準
+$ff-en: 'Marcellus', serif; //英字
+//$fz-base: 14px; //ベースフォントサイズ
+$fw-base: 400; //ベースフォントウェイト
+$lh-base: 1; //ベース行間
+
+// サイト内フォントサイズ設定
+$default-min-bp: 375px; // _functions.scss / fluid-textで使用
+$default-bp: 1440px; // _functions.scss / fluid-textで使用
+$default-max-bp: 1920px; // _functions.scss / fluid-textで使用
+$root-font-size: 16px;
+
+// コンテンツ幅設定
+$content-main-width: 1200px;
+$content-inner-width: 1070px;

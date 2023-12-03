@@ -1,0 +1,95 @@
+@use "sass:math";
+@use "../global" as *;
+@use "../foundation/fonts" as *;
+
+.p-entry {
+  padding-top: 60px;
+  padding-bottom: 70px;
+
+  @media (min-width: 900px) {
+    padding-bottom: 100px;
+  }
+}
+
+.p-entry__inner {
+  text-align: center;
+}
+
+.p-entry__link {
+  width: fluid-text(345px, 485px);
+  display: inline-block;
+ 
+
+  @media (max-width: 374px) {
+    width: 300px;
+  }
+
+  @media (min-width: 900px) {
+    &:hover {
+      .p-entry__img > img {
+        transform: translate(-50%, -50%) scale(1.08);
+      }
+    }
+  }
+}
+
+.p-entry__img {
+  aspect-ratio: 486/321;
+  position: relative;
+  overflow: hidden;
+
+  > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s;
+  }
+}
+
+.p-entry__button {
+  text-align: center;
+  margin-top: 30px;
+
+  @media (min-width: 900px) {
+    margin-top: 40px;
+  }
+}
+
+.p-entry__info {
+  width: 400px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: left;
+
+  @media (min-width: 900px) {
+    margin-top: 40px;
+  }
+}
+
+.p-entry__title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.p-entry__content {
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.p-entry__content-body {
+  display: flex;
+}
+
+.p-entry__content-head {
+}
+
+.p-entry__content-text {
+}
+
+.p-entry__content-overview {
+  margin-top: 20px;
+}

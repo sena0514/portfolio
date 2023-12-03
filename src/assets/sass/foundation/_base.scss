@@ -1,0 +1,40 @@
+@use "sass:math";
+@use "fonts" as *;
+@use "../global" as *;
+
+html {
+  font-size: math.div($root-font-size, 16px) * 100%;
+}
+
+body {
+  color: $text-color;
+  font-family: $ff-base;
+  font-weight: $fw-base;
+  line-height: $lh-base;
+  background: $background-color;
+}
+
+body {
+  @media (min-width: 800px) {
+    display: flex;
+    
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: scroll;
+}
