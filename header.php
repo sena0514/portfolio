@@ -42,6 +42,11 @@
 						<i class="fa-brands fa-square-x-twitter fa-2x" style="color: #fff"></i>
 					</a>
 				</li>
+				<li class="p-header__sns-item">
+					<a href="https://github.com/sena0514?tab=repositories" target="_blank" class="p-header__sns-link">
+					<i class="fa-brands fa-github fa-2x" style="color: #fff"></i>
+					</a>
+				</li>
 			</ul>
 		</div>
 	</header>
@@ -87,6 +92,11 @@
 		<div class="p-drawer__sns">
 			<a href="https://twitter.com/siratama_goro" target="_blank">
 				<i class="fa-brands fa-square-x-twitter fa-2x" style="color: #333333"></i>
+			</a>
+		</div>
+		<div class="p-drawer__sns">
+			<a href="https://twitter.com/siratama_goro" target="_blank">
+			<i class="fa-brands fa-github fa-2x" style="color: #333333"></i>
 			</a>
 		</div>
 	</div>
