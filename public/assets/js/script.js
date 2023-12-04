@@ -7,6 +7,8 @@ jQuery(function ($) {
     return false;
   });
 
+
+  
   //画面幅を広げたら自動で閉じるように
   $(window).resize(function () {
     var windowWidth = $(window).width(); //画面幅
