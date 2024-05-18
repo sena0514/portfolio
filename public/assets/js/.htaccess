@@ -1,0 +1,5 @@
+
+AuthUserFile "/home/xs303957/sena-web.com/htpasswd/test2/.htpasswd"
+AuthName "Member Site"
+AuthType BASIC
+require valid-user
